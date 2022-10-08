@@ -2,9 +2,6 @@ import { BrowserRouter, useRoutes } from "react-router-dom";
 import './App.scss';
 import Home from "./pages/Home";
 
-
-
-
 function AppRoutes() {
   const routes = useRoutes([
     { path: "/", element: <Home /> },

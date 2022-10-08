@@ -1,6 +1,10 @@
+import Layout from "../components/Layout"
+
 const Home = () => {
     return (
-        <a>BOOKER SITE DONE!</a>
+        <Layout>
+            <a>THIS IS AWESOME!</a>
+        </Layout>
     )
 }
 
