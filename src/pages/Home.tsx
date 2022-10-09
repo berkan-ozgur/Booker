@@ -1,21 +1,10 @@
 import Layout from "../components/Layout"
+import Card from '../components/Card'
 
 const Home = () => {
     return (
         <Layout>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <Card/>
             <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
             <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
             <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
