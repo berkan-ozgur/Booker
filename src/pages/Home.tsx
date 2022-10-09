@@ -3,7 +3,27 @@ import Layout from "../components/Layout"
 const Home = () => {
     return (
         <Layout>
-            <a>THIS IS AWESOME!</a>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
+            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
         </Layout>
     )
 }
