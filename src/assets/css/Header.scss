@@ -434,6 +434,12 @@ p a:hover::after {
   }
 }
 
+@media (max-width: 1200px) {
+  .wishlist {
+    display: none !important;
+  }
+}
+
 @media only screen and (max-width: 991px) {
   .header_search {
     height: 50px;
@@ -507,6 +513,10 @@ p a:hover::after {
     display: none;
   }
 
+  .logo{
+    text-align: center;
+  }
+
   .logo_container,
   .wishlist_cart {
     height: 72px;
@@ -518,9 +528,6 @@ p a:hover::after {
 
   .wishlist_content {
     margin-left: 6px;
-  }
-  .cart_text {
-    display: none;
   }
   .cart_text a {
     font-size: 14px;
