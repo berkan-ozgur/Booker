@@ -5,10 +5,13 @@ import Carousel from "../components/Carousel"
 
 const Home = () => {
     return (
-        <Layout>
-            <Carousel />
-            <Card />
-        </Layout>
+        <>
+            <title>Anasayfa</title>
+            <Layout>
+                <Carousel />
+                <Card />
+            </Layout>
+        </>
     )
 }
 
