@@ -1,19 +1,17 @@
 import Layout from "../components/Layout"
 import Card from '../components/Card'
+import Carousel from "../components/Carousel"
+
 
 const Home = () => {
     return (
-        <Layout>
-            <Card/>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-            <li>BURAYA ÇOK GÜZEL ŞEYLER GELECEK INANILMAZ!</li>
-        </Layout>
+        <>
+            <title>Anasayfa</title>
+            <Layout>
+                <Carousel />
+                <Card />
+            </Layout>
+        </>
     )
 }
 

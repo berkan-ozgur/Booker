@@ -1,0 +1,13 @@
+.carousel-items{
+    background-color: rgba(20, 63, 107, 0.05);
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    margin-top: 25px;
+    border: solid 1px black;
+    height: 300px;
+}
+
+.alice-carousel__dots {
+    margin: 10px 3px 5px !important;
+}
