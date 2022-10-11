@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
 * {
 	box-sizing: border-box
 }
@@ -11,7 +13,7 @@
 
  .products-card {
 	width: 180px;
-	height: 310px;
+	height: 340px;
 	border-radius: 15px;
 	box-shadow: 0px 7px 10px rgba(black, 0.5);
  }
@@ -19,14 +21,13 @@
  .card {
 	width: 180px;
 	height: 260px;
-	border-radius: 15px;
 	padding: 1.5rem;
 	background: white;
 	position: relative;
 	display: flex;
 	align-items: flex-end;
 	transition: 0.4s ease-out;
-	box-shadow: 0px 7px 10px rgba(black, 0.5);
+	border: none;
 	&:hover {
 		transform: translateY(5px);
 		&:before {
@@ -62,7 +63,6 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	border-radius: 15px;
 }
 
 .card-container {
@@ -104,21 +104,12 @@
 	width: 160px;
 	height: 40px;;
 	background-color: #143F6B;
-
-	&:hover {
-		&:before {
-			opacity: 1;
-		}
-		.add-to-cart {
-			opacity: 1;
-			transform: translateY(0px);
-		}
-		
-	}	
+	color: white;
 }
 
-.add-to-cart {
-	opacity: 0;
-	color: white;
-	
+.price {
+	font-family: 'Inconsolata', monospace;
+	font-weight: bolder;
+	margin-top: 5px;
+	margin-left: 60px;
 }

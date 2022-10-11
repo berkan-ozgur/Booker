@@ -21,13 +21,12 @@ const BookCard = () => {
             </div>
           </div>
         </div>
-          <button className="btn btn-primary"  type="button">
-            <p className="add-to-cart"> Add To Cart</p>
-            
-          </button>
-        </div>
+        <div className="price">199.99 ₺</div>
+        <button className="btn btn-primary" type="button">
+          Add To Card
+        </button>
       </div>
-   
+    </div>
   );
 };
 export default BookCard;
