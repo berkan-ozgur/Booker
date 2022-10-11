@@ -2,38 +2,44 @@
 	box-sizing: border-box
 }
 
-
- 
- 
  .wrapper {
 	display: flex;
+	border: 1px black;
 	width: 90%;
 	justify-content: space-around;
  }
 
+ .products-card {
+	width: 180px;
+	height: 310px;
+	border-radius: 15px;
+	box-shadow: 0px 7px 10px rgba(black, 0.5);
+ }
+
  .card {
-	width: 280px;
-	height: 360px;
+	width: 180px;
+	height: 260px;
 	border-radius: 15px;
 	padding: 1.5rem;
 	background: white;
 	position: relative;
 	display: flex;
 	align-items: flex-end;
-	transition: 0.4 ease-out;
+	transition: 0.4s ease-out;
 	box-shadow: 0px 7px 10px rgba(black, 0.5);
 	&:hover {
-		transform: translateY(20px);
-		
+		transform: translateY(5px);
 		&:before {
-			opacity: 1
+			opacity: 1;
 		}
 		.card-container {
 			opacity: 1;
 			transform: translateY(0px);
 		}
+	}
+
 	&:before {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -41,11 +47,10 @@
 		width: 100%;
 		height: 100%;
 		border-radius: 15px;
-		background: rgb(0, 0,6);
+		background: rgba(black, 0.6);
 		z-index: 2;
 		transition: 0.5s;
 		opacity: 0;
-	}
 	}
 	
 }
@@ -62,8 +67,9 @@
 
 .card-container {
 	position: relative;
+	width: 140px;
 	z-index: 3;
-	color: black;
+	color: white;
 	opacity: 0;
 	transform: translateY(30px);
 	transition: 0.5s;
@@ -80,18 +86,39 @@
 	margin-top: 8px;
 }
 
+.heartIcon {
+	color: white;
+	cursor: pointer;
+	width: 30px;
+	height: 30px;
+	font-size: 30px;
+	margin: auto;
+  }
+.heartIcon:hover {
+	transform: scale(1.1);
+}
+
 .btn {
-padding: 0.6rem;
-outline: none;
-border: none;
-border-radius: 3px;
-background: white;
-color: black;
-font-weight: bold;
-cursor: pointer;
-transition: 0.4s ease;
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 160px;
+	height: 40px;;
+	background-color: #143F6B;
+
 	&:hover {
-		background: #143F6B;
-		color: white;
-	}
+		&:before {
+			opacity: 1;
+		}
+		.add-to-cart {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+		
+	}	
+}
+
+.add-to-cart {
+	opacity: 0;
+	color: white;
+	
 }
