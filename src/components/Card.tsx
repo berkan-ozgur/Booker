@@ -21,7 +21,7 @@ const BookCard = () => {
             </div>
           </div>
         </div>
-        <div className="price">199.99 ₺</div>
+        <div className="price">199.99₺</div>
         <button className="btn btn-primary" type="button">
           Add To Card
         </button>
