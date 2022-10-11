@@ -9,7 +9,7 @@ const Home = () => {
             <title>Anasayfa</title>
             <Layout>
                 <Carousel />
-                <Card />
+                <Card/>
             </Layout>
         </>
     )
