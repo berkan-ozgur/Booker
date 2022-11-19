@@ -12,3 +12,22 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+//checkbox colors
+.p-checkbox .p-checkbox-box.p-highlight{ 
+  border-color: #143F6B !important;
+  background: #143F6B !important;
+}
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus{
+  box-shadow:
+  0 0 0 2px #ffffff,
+  0 0 0 4px #143F6B,
+  0 1px 2px 0 rgb(0 0 0 / 0%) !important;
+  border-color:#143F6B !important;
+}
+//input text focus colors
+.p-inputtext:enabled:focus {
+  border-color: #143F6B !important;
+  box-shadow: 0 0 0 1px #143F6B !important;
+}

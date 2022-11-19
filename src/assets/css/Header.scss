@@ -262,7 +262,7 @@ p a:hover::after {
 }
 
 .header_search_form_container {
-  width: 100%;
+  width: 85%;
   height: 50px;
   border: solid 1px #e5e5e5;
   border-radius: 5px;
@@ -283,12 +283,11 @@ p a:hover::after {
 .header_search_input {
   display: block;
   position: relative;
-  width: calc((100% - 50px) * 1);
   height: 100%;
   line-height: 50px;
   border: none !important;
   outline: none !important;
-  padding-left: 26px;
+  padding-left: 20px;
   color: #7f7f7f;
   float: left;
 }
