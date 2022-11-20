@@ -269,7 +269,7 @@ const Register = () => {
                   </div>
                   <Button
                     label="Kayıt Ol"
-                    icon="pi pi-user"
+                    icon="pi pi-check"
                     className="w-100"
                     style={{
                       backgroundColor: "#143F6B",
