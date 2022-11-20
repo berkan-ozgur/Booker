@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 
 function AppRoutes() {
@@ -16,6 +17,7 @@ function AppRoutes() {
     { path: "/aboutus", element: <AboutUs /> },
     { path: "/contact", element: <Contact /> },
     { path: "/login", element: <Login /> },
+    { path: "/register", element: <Register /> },
   ]);
   return routes;
 }
