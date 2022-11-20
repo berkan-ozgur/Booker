@@ -1,6 +1,6 @@
 import Layout from "../components/Layout"
-import Card from '../components/Card'
 import Carousel from "../components/Carousel"
+import BookCardView from "../components/BookCardView"
 
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
             <title>Anasayfa</title>
             <Layout>
                 <Carousel />
-                <Card/>
+                <BookCardView />
             </Layout>
         </>
     )

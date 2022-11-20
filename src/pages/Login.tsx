@@ -85,7 +85,7 @@ const Login = () => {
                                 <h6 style={{ color: "red" }}>{errors.password && touched.password && errors.password}</h6>
                                 <div className="d-flex align-items-center justify-content-between mb-4">
                                     <div className="d-flex align-items-center">
-                                        <Checkbox id="rememberme" onChange={e => setChecked(e.checked)} checked={checked} className="mr-2" />
+                                        <Checkbox inputId="rememberme" onChange={e => setChecked(e.checked)} checked={checked} className="mr-2" />
                                         <label htmlFor="rememberme" style={{ fontFamily: "Inter", color: "#495057", fontSize: "16px", marginLeft: "10px" }}>Beni Hatırla</label>
                                     </div>
                                 </div>
