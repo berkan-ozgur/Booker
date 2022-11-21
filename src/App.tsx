@@ -9,6 +9,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Cart from "./pages/Cart";
 
 
 function AppRoutes() {
@@ -18,6 +19,7 @@ function AppRoutes() {
     { path: "/contact", element: <Contact /> },
     { path: "/login", element: <Login /> },
     { path: "/register", element: <Register /> },
+    { path: "/cart", element: <Cart /> }
   ]);
   return routes;
 }
