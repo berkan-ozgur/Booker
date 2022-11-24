@@ -24,7 +24,7 @@ const Login = () => {
             <title>Giriş Yapın</title>
             <Header />
             <div className="d-flex align-items-center justify-content-center mt-5">
-                <div className="surface-card p-4 shadow-lg border-round w-50 mb-5" style={{ minWidth: "500px", maxWidth: "700px" }}>
+                <div className="surface-card p-4 shadow-lg border-round w-50 mb-5" style={{ minWidth: "350px", maxWidth: "700px" }}>
                     <div className="text-center mb-5">
                         <p>LOGO</p>
                         <div style={{ fontSize: "1.75rem", fontWeight: 600 }} className="mb-3">Hoş Geldiniz</div>
