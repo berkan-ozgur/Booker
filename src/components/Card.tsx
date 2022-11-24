@@ -1,8 +1,11 @@
 import bookImage from "../assets/images/bookImage.png";
+import { useState } from "react";
 // https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png
 
-
 const BookCard = () => {
+  const [favorite, setFavorite] = useState(false);
+  console.log({ favorite });
+
   return (
     <div className="wrapper">
       <div className="products-card">
@@ -11,15 +14,22 @@ const BookCard = () => {
           <div className="card-container">
             <h2 className="book-title">Book Name</h2>
             <p className="book-description">Book description</p>
-            <div className="heartIcon text-center">
-              <i className="pi pi-heart"></i>
+            <div className="heartIcon">
+              <i
+                className="pi pi-heart"
+                onClick={() =>
+                  favorite == false ? setFavorite(true) : setFavorite(false)
+                }
+              ></i>
             </div>
           </div>
         </div>
         <div className="price">199.99₺</div>
-        <button className="btn btn-primary" type="button">
-          Add To Card
-        </button>
+        <div className="card-button">
+          <button className="btn btn-primary" type="button">
+            Sepete Ekle
+          </button>
+        </div>
       </div>
       <div className="products-card">
         <div className="card">
@@ -27,15 +37,17 @@ const BookCard = () => {
           <div className="card-container">
             <h2 className="book-title">Book Name</h2>
             <p className="book-description">Book description</p>
-            <div className="heartIcon text-center">
+            <div className="heartIcon">
               <i className="pi pi-heart"></i>
             </div>
           </div>
         </div>
         <div className="price">199.99₺</div>
-        <button className="btn btn-primary" type="button">
-          Add To Card
-        </button>
+        <div className="card-button">
+          <button className="btn btn-primary" type="button">
+            Sepete Ekle
+          </button>
+        </div>
       </div>
       <div className="products-card">
         <div className="card">
@@ -43,15 +55,17 @@ const BookCard = () => {
           <div className="card-container">
             <h2 className="book-title">Book Name</h2>
             <p className="book-description">Book description</p>
-            <div className="heartIcon text-center">
+            <div className="heartIcon">
               <i className="pi pi-heart"></i>
             </div>
           </div>
         </div>
         <div className="price">199.99₺</div>
-        <button className="btn btn-primary" type="button">
-          Add To Card
-        </button>
+        <div className="card-button">
+          <button className="btn btn-primary" type="button">
+            Sepete Ekle
+          </button>
+        </div>
       </div>
       <div className="products-card">
         <div className="card">
@@ -59,15 +73,17 @@ const BookCard = () => {
           <div className="card-container">
             <h2 className="book-title">Book Name</h2>
             <p className="book-description">Book description</p>
-            <div className="heartIcon text-center">
+            <div className="heartIcon">
               <i className="pi pi-heart"></i>
             </div>
           </div>
         </div>
         <div className="price">199.99₺</div>
-        <button className="btn btn-primary" type="button">
-          Add To Card
-        </button>
+        <div className="card-button">
+          <button className="btn btn-primary" type="button">
+            Sepete Ekle
+          </button>
+        </div>
       </div>
     </div>
   );

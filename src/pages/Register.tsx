@@ -13,7 +13,7 @@ const Register = () => {
     name: "",
     surname: "",
     email: "",
-   phoneNumber : "",
+    phoneNumber : "",
     password: "",
     confirmPassword: "",
   } as RegisterRequest;
