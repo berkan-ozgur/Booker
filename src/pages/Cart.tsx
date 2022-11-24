@@ -57,16 +57,16 @@ const Cart = () => {
                         </div>
                         <div className="col-2">
                             <div className="col-12">
-                                <Button className="shopping-card-buttons" onClick={decrementCounter}>
-                                    -
+                                <Button className="shopping-card-buttons" onClick={incrementCounter}>
+                                    +
                                 </Button>
                             </div>
                             <div className="col-12">
                                 {counter}
                             </div>
                             <div className="col-12">
-                                <Button className="shopping-card-buttons" onClick={incrementCounter}>
-                                    +
+                                <Button className="shopping-card-buttons" onClick={decrementCounter}>
+                                    -
                                 </Button>
                             </div>
                         </div>
