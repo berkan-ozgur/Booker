@@ -124,3 +124,23 @@
 		height: 250px;
 	}
 }
+
+// buttons for override
+
+.p-button{
+    background-color: #143f6b !important;
+    border: 0 !important; 
+    border-radius: 6px !important;
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    height: 35 !important;
+}
+
+.p-button:enabled:focus{
+    border-color: #143F6B !important;
+    box-shadow: 0 0 0 1px #143F6B !important;
+}
+
+.p-button:hover{
+    background-color: #204678 !important;
+}
