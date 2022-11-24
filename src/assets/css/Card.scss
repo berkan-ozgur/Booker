@@ -15,6 +15,7 @@
 	width: 210px;
 	height: 310px;
 	border-radius: 15px;
+	margin: 15px;
 	box-shadow: 0px 7px 10px rgba(black, 0.5);
  }
 
@@ -112,6 +113,11 @@
 	margin-top: 8px;
 }
 
+.card-column {
+	justify-content: center;
+	display: flex;
+}
+
 .price {
 	font-family: 'Inconsolata', monospace;
 	font-weight: bolder;
@@ -120,11 +126,11 @@
 	margin-top: 8px;
 }
 
-@media (max-width: 576px) {
-	.products-card{
-		height: 250px;
-	}
-}
+// @media (max-width: 576px) {
+// 	.products-card{
+// 		height: 250px;
+// 	}
+// }
 
 // buttons for override
 
