@@ -74,7 +74,7 @@ const Cart = () => {
                             24 Saatte Kargoda
                         </div>
                         <div className="col-2" style={{ color: '#777' }}>
-                            ₺ {price}
+                            {price}₺
                         </div>
                         <div className="col-2">
                             {newPrice.toLocaleString(undefined, { maximumFractionDigits: 2 })}₺
