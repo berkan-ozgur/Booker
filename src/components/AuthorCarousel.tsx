@@ -7,11 +7,15 @@ const AuthorCarousel = () => {
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
-            items: 7
+            items: 6
         },
         desktop: {
-            breakpoint: { max: 3000, min: 1024 },
-            items: 7
+            breakpoint: { max: 3000, min: 1317 },
+            items: 6
+        },
+        minidesktop: {
+            breakpoint: { max: 1317, min: 1024 },
+            items: 4
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -33,7 +37,7 @@ const AuthorCarousel = () => {
                     responsive={responsive}
                     draggable={true}
                     showDots={false}
-                    removeArrowOnDeviceType={["tablet", "mobile", "superLargeDesktop", "desktop"]}>
+                    removeArrowOnDeviceType={["tablet", "mobile"]}>
                     <div className="row">
                         <div className="col-12">
                             <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
