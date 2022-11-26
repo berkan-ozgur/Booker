@@ -1,0 +1,26 @@
+.author-container{
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    user-select: none;
+    padding: 30px;
+    img{
+        object-fit: cover;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+}
+
+.author-container-header{
+    position: absolute;
+    font-weight: 500;
+    font-size: 24px;
+    top: -23px;
+    left: 5px;
+    z-index: 1;
+    background-color: #fff;
+    color: #143F6B;
+}
