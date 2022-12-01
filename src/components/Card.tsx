@@ -8,7 +8,7 @@ const BookCard = () => {
 
   return (
     <div className="row wrapper">
-      <div className="col-lg-3 col-md-4 card-column">
+      <div className="col-lg-3 col-md-6 card-column">
         <div className="products-card">
           <div className="card">
             <img src={bookImage} className="book-image" alt="" />
@@ -33,7 +33,7 @@ const BookCard = () => {
           </div>
         </div>
       </div>
-      <div className="col-lg-3 col-md-4 card-column">
+      <div className="col-lg-3 col-md-6 card-column">
         <div className="products-card">
           <div className="card">
             <img src={bookImage} className="book-image" alt="" />
@@ -58,7 +58,7 @@ const BookCard = () => {
           </div>
         </div>
       </div>
-      <div className="col-lg-3 col-md-4 card-column">
+      <div className="col-lg-3 col-md-6 card-column">
         {" "}
         <div className="products-card">
           <div className="card">
@@ -79,7 +79,7 @@ const BookCard = () => {
           </div>
         </div>
       </div>
-      <div className="col-lg-3 col-md-4 card-column">
+      <div className="col-lg-3 col-md-6 card-column">
         <div className="products-card">
           <div className="card">
             <img src={bookImage} className="book-image" alt="" />

@@ -10,6 +10,7 @@ import Contact from "./pages/Contact";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Cart from "./pages/Cart";
+import BookDetail from "./pages/BookDetail";
 
 
 function AppRoutes() {
@@ -19,7 +20,8 @@ function AppRoutes() {
     { path: "/contact", element: <Contact /> },
     { path: "/login", element: <Login /> },
     { path: "/register", element: <Register /> },
-    { path: "/cart", element: <Cart /> }
+    { path: "/cart", element: <Cart /> },
+    { path: "/book-detail", element: <BookDetail /> }
   ]);
   return routes;
 }
