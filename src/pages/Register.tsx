@@ -12,7 +12,7 @@ function App(){
     const[sonuc,setSonuc] = useState("");
 
     const baglan = () => {
-        axios.get("http:localhost:80/bookseller/baglan.php");
+        axios.get("http://localhost:80/bookseller/baglan.php");
     }
 
 }
