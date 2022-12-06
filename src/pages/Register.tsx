@@ -6,6 +6,16 @@ import { Link } from "react-router-dom";
 import { Formik } from "formik";
 import { Button, Checkbox, InputNumber, InputText } from "primereact";
 import { useState } from "react";
+import axios from 'axios';
+
+function App(){
+    const[sonuc,setSonuc] = useState("");
+
+    const baglan = () => {
+        axios.get("http:localhost:80/bookseller/baglan.php");
+    }
+
+}
 
 const Register = () => {
   const [checked, setChecked] = useState<boolean>(false);
