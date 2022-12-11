@@ -10,12 +10,54 @@
 
 .card-detail {
     text-align: center;
+    margin-top: 100px;
+    
+}
+
+.explanation{
+    margin-top: 50px !important;
 }
 
 .book-image-detail {
     border: 1px solid #E5E7EB;
     border-radius: 10px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
 }
 
+.detail-row {
+    align-items: center;
+}
+
+.rating-card {
+    margin: 15px;
+    width: 20rem;
+}
+
+.rating {
+    justify-content: center;
+    margin: 20px;
+}
+
+.rating-card-links {
+    color: gray;
+}
+
+.store-card {
+    margin: 15px;
+    width: 20rem;
+}
+.store-card-links{
+    justify-content: center;
+    margin: 15px;
+    display: flex;
+    color: dimgrey;
+}
+
+.book-feature {
+    padding: 50px;
+    justify-content: center;
+    display: flex;
+}

@@ -1,5 +1,6 @@
 import bookImage from "../assets/images/bookImage.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png
 
 const BookCard = () => {
@@ -9,6 +10,7 @@ const BookCard = () => {
   return (
     <div className="row wrapper">
       <div className="col-lg-3 col-md-6 card-column">
+        <Link to='/book-detail'>
         <div className="products-card">
           <div className="card">
             <img src={bookImage} className="book-image" alt="" />
@@ -32,6 +34,7 @@ const BookCard = () => {
             </button>
           </div>
         </div>
+        </Link>
       </div>
       <div className="col-lg-3 col-md-6 card-column">
         <div className="products-card">
