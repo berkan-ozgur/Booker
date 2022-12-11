@@ -28,7 +28,7 @@ const AuthorCarousel = () => {
     };
 
     return (
-        <div>
+        <><div>
             <div className="author-container-header">
                 Ayın Yazarları
             </div>
@@ -112,7 +112,152 @@ const AuthorCarousel = () => {
                     </div>
                 </Carousel>
             </div>
-        </div>
+        </div><div>
+                <div className="author-container-header">
+                    Ayın Yayınevleri
+                </div>
+                <div className="author-container">
+                    <Carousel
+                        responsive={responsive}
+                        draggable={true}
+                        showDots={false}
+                        removeArrowOnDeviceType={["tablet", "mobile"]}>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                    </Carousel>
+                </div>
+            </div>
+            <div>
+                <div className="author-container-header">
+                    Ne Okusam?
+                </div>
+                <div className="author-container">
+                    <Carousel
+                        responsive={responsive}
+                        draggable={true}
+                        showDots={false}
+                        removeArrowOnDeviceType={["tablet", "mobile"]}>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-12">
+                                <Avatar style={{ height: "100px", width: "100px" }} image={AvatarImage} size={"large"} shape={"circle"} />
+                            </div>
+                            <div className="col-12">
+                                Berkan Özgür
+                            </div>
+                        </div>
+                    </Carousel>
+                </div>
+            </div></>
     )
 }
 

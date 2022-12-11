@@ -11,6 +11,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Cart from "./pages/Cart";
 import BookDetail from "./pages/BookDetail";
+import Favorites from "./pages/Favorites";
 
 
 function AppRoutes() {
@@ -21,7 +22,8 @@ function AppRoutes() {
     { path: "/login", element: <Login /> },
     { path: "/register", element: <Register /> },
     { path: "/cart", element: <Cart /> },
-    { path: "/book-detail", element: <BookDetail /> }
+    { path: "/book-detail", element: <BookDetail /> },
+    { path: "/favorites", element: <Favorites /> }
   ]);
   return routes;
 }
