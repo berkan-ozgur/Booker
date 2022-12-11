@@ -7,6 +7,7 @@ import { LoginRequest } from "../models/requests/LoginRequest.interface";
 import { Formik } from "formik";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import logo from "../assets/images/logo.png";
 
 const Login = () => {
 
@@ -27,7 +28,7 @@ const Login = () => {
             <div className="d-flex align-items-center justify-content-center mt-5">
                 <div className="surface-card p-4 shadow-lg border-round w-50 mb-5" style={{ minWidth: "350px", maxWidth: "700px" }}>
                     <div className="text-center mb-5">
-                        <p>LOGO</p>
+                        <img src={logo} draggable={false} width={300}></img>
                         <div style={{ fontSize: "1.75rem", fontWeight: 600 }} className="mb-3">Hoş Geldiniz</div>
                         <span style={{ fontWeight: 500, color: "#495057" }}>Hesabınız yok mu?</span>
                         <Link to="/register" style={{ fontWeight: 500, marginLeft: "10px", color: "#143F6B" }}>Hemen oluşturun!</Link>

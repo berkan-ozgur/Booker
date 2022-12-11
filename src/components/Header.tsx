@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../assets/images/logo.png";
 
 const Header = () => {
     return (
@@ -49,7 +50,7 @@ const Header = () => {
                                 <div className="logo_container">
                                     <div className="logo">
                                         <Link to="/" style={{ color: "#143F6B" }}>
-                                            Logo
+                                            <img src={logo} width={150} className="mt-2"></img>
                                         </Link>
                                     </div>
                                 </div>
