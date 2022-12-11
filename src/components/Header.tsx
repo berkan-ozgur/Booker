@@ -1,7 +1,9 @@
+import axios from "axios";
 import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
+        
         <div className="super_container">
             <header className="header">
                 <div className="top_bar">

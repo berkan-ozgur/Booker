@@ -7,6 +7,7 @@ import { Formik } from "formik";
 import { Button, Checkbox, InputNumber, InputText } from "primereact";
 import { useState } from "react";
 import axios from "axios";
+import logo from "../assets/images/logo.png";
 
 const Register = () => {
   const [checked, setChecked] = useState<boolean>(false);
@@ -53,7 +54,7 @@ const Register = () => {
           style={{ minWidth: "350px", maxWidth: "700px" }}
         >
           <div className="text-center mb-5">
-            <p>LOGO</p>
+            <img src={logo} width={300} draggable={false}></img>
             <div
               style={{ fontSize: "1.75rem", fontWeight: 600 }}
               className="mb-3"
