@@ -23,6 +23,7 @@ p {
   -webkit-font-smoothing: antialiased;
   -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
   text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  margin-top: 0;
 }
 
 p a {
@@ -73,7 +74,7 @@ p a:hover::after {
 
 .top_bar {
   background: #fafafa;
-  border-bottom: solid 1px rgba(0, 0, 0, 0.05);
+  border-bottom: solid 1px #ddd;
   z-index: 2;
 
   .container {
@@ -264,14 +265,14 @@ p a:hover::after {
 .header_search_form_container {
   width: 85%;
   height: 50px;
-  border: solid 1px #e5e5e5;
+  border: solid 1px #ddd;
   border-radius: 5px;
 }
 
 .header_search_form_container2 {
   width: 100%;
   height: 36px;
-  border: solid 1px #e5e5e5;
+  border: solid 1px #ddd;
   border-radius: 5px;
 }
 
@@ -607,7 +608,9 @@ p a:hover::after {
 }
 
 hr {
-  margin-top: 0rem !important;
+  margin: 0 !important;
+  color:#ddd !important;
+  opacity: 100% !important;
 }
 
 .cart_icon {

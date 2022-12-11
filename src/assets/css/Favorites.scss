@@ -1,0 +1,18 @@
+.favorites{
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+.favorites-card{
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    min-height: 380px;
+    i:hover{
+    font-size: 1.5em !important;
+    cursor: pointer;
+    }
+}
+

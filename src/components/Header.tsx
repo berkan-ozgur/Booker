@@ -83,16 +83,16 @@ const Header = () => {
                                 <div className="wishlist_cart d-flex flex-row align-items-center justify-content-end">
                                     <div className="d-flex flex-row align-items-center justify-content-end">
                                         <div className="wishlist d-flex flex-row align-items-center justify-content-end">
-                                            <a href="#">
+                                            <Link to="/favorites">
                                                 <div className="wishlist_icon">
                                                     <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918681/heart.png" alt="" />
                                                 </div>
-                                            </a>
+                                            </Link>
                                             <div className="wishlist_content">
-                                                <div className="wishlist_text"><a href="#" style={{ color: "inherit" }}>Favoriler</a></div>
-                                                <a href="#">
+                                                <Link to="/favorites">
+                                                    <div className="wishlist_text"><a href="#" style={{ color: "black" }}>Favoriler</a></div>
                                                     <div className="wishlist_count">1</div>
-                                                </a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
