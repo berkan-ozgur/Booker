@@ -7,12 +7,18 @@ import { Formik } from "formik";
 import { Button, Checkbox, InputNumber, InputText } from "primereact";
 import { useState } from "react";
 import axios from "axios";
-import logo from "../assets/images/logo.png";
 
 const Register = () => {
   const [checked, setChecked] = useState<boolean>(false);
   const [sonuc, setSonuc] = useState("");
-
+  let history = useNavigate(); // Use for Navigate on Previous
+  const baglan = () => {
+    axios.get("http://localhost:80/bookseller/baglan.php").then(response => {
+      console.log(response)
+    }).catch(error => {
+      console.log("Hata oluştu")
+    });
+  }
   const formValues = {
     name: "",
     surname: "",
@@ -23,12 +29,32 @@ const Register = () => {
   } as RegisterRequest;
   const navigate = useNavigate();
 
+  const [values, setData]=useState({
+    first_name:"",
+    last_name:"",
+    email:"",
+    password:""
+})
+
   const loginPass = (values: RegisterRequest) => {
     if (values.confirmPassword === values.password) {
-      alert(JSON.stringify(values, null, 2));
-      if (values) {
-        navigate("/login");
-      }
+      const sendData = {
+        first_name:values.name,
+        last_name:values.surname,
+        email:values.email,
+        password:values.password
+    }
+    axios.post('http://localhost/booker/baglan.php',sendData)
+    .then((result)=>{
+        if (result.data.Status == 'Invalid') { 
+      alert('Invalid User');  
+        }
+    else  {
+       //props.history.push('/Dashboard')  
+       //props.history.push('/Dashboard') Redirect
+       history(`/dashboard`);
+    }
+  })  
     } else {
       alert("Passwors are not matched");
       values.password = "";
@@ -36,6 +62,31 @@ const Register = () => {
       return;
     }
   };
+
+  const submitForm=(e: { preventDefault: () => void; })=>{
+    e.preventDefault(); 
+   const sendData = {
+        first_name:values.first_name,
+        last_name:values.last_name,
+        email:values.email,
+        password:values.password
+
+    }
+
+    console.log(sendData);
+
+    axios.post('http://localhost/booker/baglan.php',sendData)
+    .then((result)=>{
+        if (result.data.Status == 'Invalid') { 
+      alert('Invalid User');  
+        }
+    else  {
+       //props.history.push('/Dashboard')  
+       //props.history.push('/Dashboard') Redirect
+       history(`/dashboard`);
+    }
+  })  
+}
 
   return (
     <>
@@ -47,7 +98,7 @@ const Register = () => {
           style={{ minWidth: "350px", maxWidth: "700px" }}
         >
           <div className="text-center mb-5">
-            <img src={logo} width={300} draggable={false}></img>
+            <p>LOGO</p>
             <div
               style={{ fontSize: "1.75rem", fontWeight: 600 }}
               className="mb-3"
@@ -135,8 +186,8 @@ const Register = () => {
                     type="name"
                     name="name"
                     onChange={handleChange}
-                    onBlur={handleBlur}
                     value={values.name}
+                    onBlur={handleBlur}
                   ></InputText>
                   <h6 style={{ color: "red" }}>
                     {errors.name && touched.name && errors.name}
@@ -154,8 +205,8 @@ const Register = () => {
                     type="surname"
                     name="surname"
                     onChange={handleChange}
-                    onBlur={handleBlur}
                     value={values.surname}
+                    onBlur={handleBlur}
                   ></InputText>
                   <h6 style={{ color: "red" }}>
                     {errors.surname && touched.surname && errors.surname}
@@ -173,8 +224,8 @@ const Register = () => {
                     type="email"
                     name="email"
                     onChange={handleChange}
-                    onBlur={handleBlur}
                     value={values.email}
+                    onBlur={handleBlur}
                   />
                   <h6 style={{ color: "red" }}>
                     {errors.email && touched.email && errors.email}
@@ -211,8 +262,8 @@ const Register = () => {
                     type="password"
                     name="password"
                     onChange={handleChange}
-                    onBlur={handleBlur}
                     value={values.password}
+                    onBlur={handleBlur}
                     autoComplete="on"
                   />
                   <h6 style={{ color: "red" }}>
@@ -272,8 +323,8 @@ const Register = () => {
                     </div>
                   </div>
                   <Button
-                    type="button"
                     label="Kayıt Ol"
+                    type="submit"
                     icon="pi pi-check"
                     className="w-100"
                     style={{
