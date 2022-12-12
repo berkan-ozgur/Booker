@@ -25,10 +25,14 @@ const Register = () => {
 
   const loginPass = (values: RegisterRequest) => {
     if (values.confirmPassword === values.password) {
-      alert(JSON.stringify(values, null, 2));
-      if (values) {
-        navigate("/login");
-      }
+      const data = { 
+        name: values.name,
+        email: values.email,
+        password: values.password,
+      };
+    axios.post('http://localhost:3000/api/user/register', data)
+        .then();
+
     } else {
       alert("Passwors are not matched");
       values.password = "";
@@ -47,7 +51,7 @@ const Register = () => {
           style={{ minWidth: "350px", maxWidth: "700px" }}
         >
           <div className="text-center mb-5">
-            <img src={logo} width={300} draggable={false}></img>
+            <p>LOGO</p>
             <div
               style={{ fontSize: "1.75rem", fontWeight: 600 }}
               className="mb-3"
@@ -272,7 +276,6 @@ const Register = () => {
                     </div>
                   </div>
                   <Button
-                    type="button"
                     label="Kayıt Ol"
                     icon="pi pi-check"
                     className="w-100"

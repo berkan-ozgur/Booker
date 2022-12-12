@@ -17,18 +17,13 @@ const Login = () => {
     const formValues = { email: "", password: "" } as LoginRequest;
 
     const loginPass = (values: LoginRequest) => {
-        alert(JSON.stringify(values, null, 2));
-        if (values) {
-            navigate("/");
-        }
+        const data = { 
+            email: values.email,
+            password: values.password,
+          };
+        axios.post('http://localhost:3000/api/user/login', data)
+            .then();
     }
-    function baglan () {
-        axios.get("http://localhost:80/bookseller/baglan.php").then(response => {
-          return response;
-        }).catch(error => {
-            return error;
-        });
-      }
     return (
         <>
             <title>Giriş Yapın</title>
