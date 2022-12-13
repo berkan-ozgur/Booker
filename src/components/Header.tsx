@@ -1,10 +1,9 @@
-import axios from "axios";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 
 const Header = () => {
     return (
-        
+
         <div className="super_container">
             <header className="header">
                 <div className="top_bar">
@@ -48,11 +47,11 @@ const Header = () => {
                 <div className="header_main">
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-2 col-md-2 col-sm-6 ">
+                            <div style={{ height: 100 }} className="col-lg-2 col-md-2 col-sm-6 ">
                                 <div className="logo_container">
                                     <div className="logo">
                                         <Link to="/" style={{ color: "#143F6B" }}>
-                                            <img src={logo} width={150} className="mt-2"></img>
+                                            <img src={logo} width={150} className="mt-4"></img>
                                         </Link>
                                     </div>
                                 </div>
