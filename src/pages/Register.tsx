@@ -31,6 +31,9 @@ const Register = () => {
         password: values.password,
       };
       axios.post("http://localhost:3000/api/user/register", data).then();
+      axios.post('http://localhost:3000/api/user/register', data)
+        .then();
+
     } else {
       alert("Passwors are not matched");
       values.password = "";
