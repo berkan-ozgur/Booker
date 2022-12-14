@@ -7,7 +7,6 @@ import { LoginRequest } from "../models/requests/LoginRequest.interface";
 import { Formik } from "formik";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import axios from "axios";
 import logo from "../assets/images/logo.png";
 import AuthService from "../services/authServices.js";
 
@@ -18,16 +17,16 @@ const Login = () => {
     const formValues = { email: "", password: "" } as LoginRequest;
 
     const loginPass = (values: LoginRequest) => {
-        const data = { 
+        const data = {
             email: values.email,
             password: values.password,
-          };
-          AuthService.login(data).then(
+        };
+        AuthService.login(data).then(
             () => {
-              navigate("/");
-              window.location.reload();
+                navigate("/");
+                window.location.reload();
             }
-          );
+        );
     }
     return (
         <>

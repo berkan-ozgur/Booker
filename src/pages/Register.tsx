@@ -25,12 +25,12 @@ const Register = () => {
 
   const loginPass = (values: RegisterRequest) => {
     if (values.confirmPassword === values.password) {
-      const data = { 
+      const data = {
         name: values.name,
         email: values.email,
         password: values.password,
       };
-    axios.post('http://localhost:3000/api/user/register', data)
+      axios.post('http://localhost:3000/api/user/register', data)
         .then();
 
     } else {
@@ -51,7 +51,7 @@ const Register = () => {
           style={{ minWidth: "350px", maxWidth: "700px" }}
         >
           <div className="text-center mb-5">
-            <p>LOGO</p>
+            <img src={logo} draggable={false} width={300}></img>
             <div
               style={{ fontSize: "1.75rem", fontWeight: 600 }}
               className="mb-3"
