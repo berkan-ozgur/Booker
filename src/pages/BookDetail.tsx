@@ -78,7 +78,7 @@ const BookDetail = () => {
             </div>
           </div>
           <div className="col-lg-4 col-sm-12">
-            <div className="col-12">
+            <div className="col-12 card-group">
               <Card className="rating-card">
                 <h3>Ürün Değerlendirmeleri</h3>
                 <Rating
