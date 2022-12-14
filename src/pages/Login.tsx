@@ -9,6 +9,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import axios from "axios";
 import logo from "../assets/images/logo.png";
+import AuthService from "../services/authServices.js";
 
 const Login = () => {
 
@@ -21,8 +22,12 @@ const Login = () => {
             email: values.email,
             password: values.password,
           };
-        axios.post('http://localhost:3000/api/user/login', data)
-            .then();
+          AuthService.login(data).then(
+            () => {
+              navigate("/");
+              window.location.reload();
+            }
+          );
     }
     return (
         <>

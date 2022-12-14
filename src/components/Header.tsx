@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import logo from "../assets/images/logo.png";
+import AuthService from "../services/authServices";
+
 
 const Header = () => {
+    const currentUser = AuthService.getCurrentUser();
     return (
-
         <div className="super_container">
             <header className="header">
                 <div className="top_bar">
@@ -22,7 +24,22 @@ const Header = () => {
                                     </div>
                                     <Link to="mailto:fastsales@gmail.com">contact@booker.com</Link>
                                 </div>
-                                <div className="top_bar_content ml-auto d-flex justify-content-end" style={{ flex: 1 }}>
+                                {
+                                    currentUser.name ? (
+                                       <div>
+                                         <h2>
+                                            Hoşgeldiniz {currentUser.name}
+                                        </h2>
+                                        <button onClick={() => {
+                                            AuthService.logout();
+                                            window.location.replace('/');
+                                        }
+                                        }>
+                                            Çıkış Yap
+                                        </button>
+                                       </div>
+                                    ) : (
+                                        <div className="top_bar_content ml-auto d-flex justify-content-end" style={{ flex: 1 }}>
                                     <div className="top_bar_user">
                                         <div>
                                             <Link to="/register">
@@ -39,7 +56,10 @@ const Header = () => {
                                         </Link>
                                         <div></div>
                                     </div>
-                                </div>
+                                </div> 
+                                    )
+                                }
+                            
                             </div>
                         </div>
                     </div>
