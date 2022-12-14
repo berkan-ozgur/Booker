@@ -20,7 +20,7 @@ const BookCarousel = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
@@ -42,52 +42,52 @@ const BookCarousel = () => {
           >
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
             <div className="row">
               <div className="col-12">
-               <Card2/>
+                <Card2 />
               </div>
             </div>
           </Carousel>

@@ -61,3 +61,12 @@
     justify-content: center;
     display: flex;
 }
+
+.p-rating .p-rating-item.p-rating-item-active .p-rating-icon{
+    color: #143F6B !important
+}
+
+.p-dropdown:not(.p-disabled).p-focus{
+    box-shadow: 0 0 0 1px solid #143F6B !important;
+    border-color: #143F6B !important;
+}

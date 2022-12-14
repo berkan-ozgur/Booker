@@ -4,23 +4,18 @@ import BookImage from "../assets/images/bookImage.png";
 import {
   Button,
   Card,
-  Column,
-  DataTable,
   Dropdown,
   Rating,
-  SplitButton,
 } from "primereact";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import AuthorCarousel from "../components/AuthorCarousel";
 import BookCarousel from "../components/BookCarousel";
 
 const BookDetail = () => {
   let ratingNumber = 12;
-
-  const items = Array.from({ length: 10 }).map((_, i) => ({
-    label: `${i}`,
-    value: i,
+  const items = Array.from({ length: 20 }).map((_, i) => ({
+    label: `${++i}`,
+    value: ++i,
   }));
   const [selectedItem, setSelectedItem] = useState<any>(null);
   const onItemChange = (e: { value: any }) => {
@@ -32,7 +27,7 @@ const BookDetail = () => {
       <title>{BookName}</title>
       <Layout>
         <div className="card-detail row">
-          <div className="col-lg-5 col-sm-12 book-image-detail">
+          <div className="col-lg-3 col-sm-12 book-image-detail">
             <Image src={BookImage} alt="Image" width="250" preview />
           </div>
           <div className="col-lg-5 col-sm-12 explanation">
@@ -82,11 +77,12 @@ const BookDetail = () => {
               </div>
             </div>
           </div>
-          <div className="col-2">
+          <div className="col-lg-4 col-sm-12">
             <div className="col-12">
               <Card className="rating-card">
                 <h3>Ürün Değerlendirmeleri</h3>
                 <Rating
+                  color="blue"
                   className="rating"
                   value={3.5}
                   readOnly
@@ -110,13 +106,14 @@ const BookDetail = () => {
                 <div>
                   <h4>
                     <Link to="#" className="store-card-links">
-                      <i className="pi pi-home" /> Mağazayı Gör
-                      <i className="pi pi-angle-right" />
+                      <i className="pi pi-home align-self-center" style={{ marginRight: 5 }} />
+                      Mağazayı Gör
+                      <i className="pi pi-angle-right align-self-center" />
                     </Link>
                     <hr />
                     <Link to="#" className="store-card-links">
                       Ürün Soruları ({ratingNumber})
-                      <i className="pi pi-angle-right" />
+                      <i className="pi pi-angle-right align-self-center" />
                     </Link>
                   </h4>
                 </div>
