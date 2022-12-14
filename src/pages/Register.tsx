@@ -78,12 +78,6 @@ const Register = () => {
                 } else if (values.name.length > 20) {
                   errors.name = "*Adınız 20 karakter veya daha az olmalıdır!";
                 }
-                if (!values.surname) {
-                  errors.surname = "*Bu alan boş bırakılamaz!";
-                } else if (values.surname.length > 20) {
-                  errors.surname =
-                    "*Soyadınız 20 karakter veya daha az olmalıdır!";
-                }
                 if (!values.email) {
                   errors.email = "*Bu alan boş bırakılamaz!";
                 } else if (
@@ -131,7 +125,7 @@ const Register = () => {
                     className="d-block mb-2"
                     style={{ fontWeight: 500 }}
                   >
-                    Adınız
+                    Ad ve Soyad
                   </label>
                   <InputText
                     id="name"
@@ -144,25 +138,6 @@ const Register = () => {
                   ></InputText>
                   <h6 style={{ color: "red" }}>
                     {errors.name && touched.name && errors.name}
-                  </h6>
-                  <label
-                    htmlFor="surname"
-                    className="d-block mb-2"
-                    style={{ fontWeight: 500 }}
-                  >
-                    Soyadınız
-                  </label>
-                  <InputText
-                    id="surname"
-                    className="w-100 mb-3"
-                    type="surname"
-                    name="surname"
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    value={values.surname}
-                  ></InputText>
-                  <h6 style={{ color: "red" }}>
-                    {errors.surname && touched.surname && errors.surname}
                   </h6>
                   <label
                     htmlFor="email"
