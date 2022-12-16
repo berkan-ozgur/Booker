@@ -1,3 +1,4 @@
+import { D } from "chart.js/dist/chunks/helpers.core";
 import { Link, Navigate } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import AuthService from "../services/authServices";
@@ -26,17 +27,22 @@ const Header = () => {
                                 </div>
                                 {
                                     currentUser.name ? (
-                                       <div>
-                                         <h2>
-                                            Hoşgeldiniz {currentUser.name}
-                                        </h2>
+                                       <div className="loginName d-flex justify-content-end">
+                                         <h4 style={{}}>
+                                            Hoş geldiniz,  
+                                        </h4>
+                                        <h4 style={{marginLeft: 10}}>
+                                        {currentUser.name}
+                                        </h4>
+                                        <div className="logout">
                                         <button onClick={() => {
                                             AuthService.logout();
                                             window.location.replace('/');
                                         }
                                         }>
-                                            Çıkış Yap
+                                            <p style={{color: 'red'}}>Çıkış Yap</p>
                                         </button>
+                                        </div>
                                        </div>
                                     ) : (
                                         <div className="top_bar_content ml-auto d-flex justify-content-end" style={{ flex: 1 }}>

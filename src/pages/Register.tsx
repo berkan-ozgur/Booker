@@ -30,7 +30,6 @@ const Register = () => {
         email: values.email,
         password: values.password,
       };
-      axios.post("http://localhost:3000/api/user/register", data).then();
       axios.post('http://localhost:3000/api/user/register', data)
         .then();
 

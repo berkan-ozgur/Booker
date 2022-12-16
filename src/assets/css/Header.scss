@@ -624,3 +624,15 @@ hr {
 .header_search_input {
   border-radius: 10px !important;
 }
+
+.logout{
+  border: 1px solid gray;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+}
+
+.logout:hover{
+  font-size: 16px !important;
+}
